@@ -86,5 +86,3 @@ The **Quantitative Tearsheet** provides professional-grade metrics:
 *   **Win Rate & Profit Factor**
 *   **Expectancy & Avg Win/Loss Ratio**
 *   **Max Drawdown Tracking**
-
-Designed by **Expert Quantitative Developers**.
