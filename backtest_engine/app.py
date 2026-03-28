@@ -8,7 +8,7 @@ import strategy
 import charts
 
 st.set_page_config(layout="wide", page_title="Energy Quant Engine")
-st.title("Vectorized Quantitative Backtester")
+st.title("Energy Market Backtester")
 
 # Session State Initialization
 if 'sim_running' not in st.session_state:
