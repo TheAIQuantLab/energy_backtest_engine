@@ -3,11 +3,16 @@ import pandas as pd
 import os
 
 @st.cache_data(show_spinner=False)
-def load_and_build_master_df(target_hour, data_dir='../data_simplified'):
+def load_and_build_master_df(target_hour, data_dir=None):
     """
     Builds the Master 15m DataFrame pre-filtered for a specific target delivery hour 
     by snapping the auction publications synchronously onto the continuous MIC 15m timeframe.
     """
+    if data_dir is None:
+        # Default to 'data_simplified' in the project root
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        data_dir = os.path.join(base_dir, 'data_simplified')
+    
     markets = ['SPOT', 'IDA1', 'IDA2', 'IDA3', 'MIC', 'SETTLEMENT']
     dfs = {}
     

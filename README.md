@@ -1,3 +1,5 @@
+run: streamlit run backtest_engine/app.py
+
 # Vectorized Energy Market Backtest Engine
 
 A high-performance, vectorized quantitative simulation platform for French power markets (EPEX SPOT, IDA1-3, MIC). This engine resolves complex chronological paradoxes (look-ahead bias) and provides a modular architecture for professional strategy development.
